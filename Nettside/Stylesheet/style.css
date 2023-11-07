@@ -1,0 +1,36 @@
+
+.Ulpage1 {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: orange;
+}
+
+.Lipage1 {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.OverskriftP1 {
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+
+.image1 {
+    background-image: url("bilde/Background1.jpg");
+    width: 45vw;
+    height: 25vw;
+}
+
+.skrift1 {
+    font-size: medium;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
