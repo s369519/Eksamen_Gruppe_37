@@ -11,13 +11,16 @@
     text-decoration: none;
     color: black;
     text-align: left;
-    word-spacing: 20px;    
+    word-spacing: 10px;
+    
 }
 
 .nav-text:hover {
-    background-color: darkgrey;
-    }
-    
+    background-color:darkgoldenrod;
+    padding: 1rem;
+
+}
+
 
 .OverskriftP1 {
     font-size: xx-large;
