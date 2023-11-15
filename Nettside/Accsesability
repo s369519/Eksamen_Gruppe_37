@@ -2,12 +2,22 @@
 <html lang="no"> 
 
 <head> 
-<title> Eksamen </title>
-<link rel="stylesheet" href="Stylesheet/style.css">
-<meta name="viewport" content="width=device-width, intial-scale=1">
+<title> Eksamen </title>   
+<link rel="stylesheet" href="Stylesheet/style.css">  
+<meta name="viewport" content="width=device-width, intial-scale=1"> 
 <meta charset="UTF-8"> 
 </head>
 
-<h1> Dette er side 2 </h1>
-
-<p></p>
+<body>
+    
+    <header> 
+        <nav>
+            <ul class="Ulpage1">
+                <a class="nav-text" href="Campus"> Campus </a>
+                <a class="nav-text" href="Accessibility"> Accessibility </a> 
+                <a class="nav-text" href="Topical"> Topical </a>
+                <a class="nav-text" href="Pilstredet"> Pilstredet </a>
+                <a class="nav-text" href="index.html"> Hovedside</a>
+            </ul>
+        </nav>
+    </header>
