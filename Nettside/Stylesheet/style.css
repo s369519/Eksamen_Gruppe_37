@@ -1,31 +1,54 @@
-
-.Ulpage1 {
-    list-style: none;
-    margin: 10px;
-    padding: 10px;
-    overflow: hidden;
-    background-color: orange;    
+body{
+    margin:0;                                   /*Gjør at navbaren kommer het opp på nettsiden, uten mellomrom*/
 }
 
-.nav-text {
-    text-decoration: dotted;
-    color: black;
-    text-align: left;
-    font-size: larger;
-    padding: 8px;
+.navbar {
+    overflow: hidden;                           /*For å fjerne uønsket scrolling som viser mellomrommet vi fjernet i body*/
+    position: fixed;                            /*For å på navbaren til å holde seg i bildet, selv når man scroller*/
+    top: 0;                                     /*Plasserer navbaren 0px fra toppen*/
+    width: 100vw;                               /*Setter vidden til hele slik at det ikke blir hvite kanter*/
+    background-color: orange;
+    color: #fff;
+    margin-top: 0%;                             /*Setter margen til 0px*/
 }
 
-.nav-text:hover {
-    background-color:darkgoldenrod;
-    padding: 8px;
-    border: cadetblue;
-    width: 100%;
+.navbar a {
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 80px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color:rgb(206, 131, 18);
+}
+
+.navbar a.active {
+    background-color: rgb(253, 211, 96);
+    color: rgb(0, 0, 0);
+}
+
+@media (max-width: 1250px) {    /*gjør at navigasjonsbaren blir listet nedover, slik at den er bedre for telefon. Har også endret slik at navbaren ikke følger med siden da den opptar mye plass*/
+    .navbar a{
+        float:none;                 
+        font-size: 15px;
+        padding: 4px 20px
+    }
+    .navbar{
+        position: sticky;
+    }
 }
 
 
 .OverskriftP1 {
     font-size: xx-large;
     font-family: sans-serif;
+    padding-top: 60px;
+    margin-left: 30px;
 }
 
 .image1 {
@@ -39,6 +62,7 @@
     font-size: medium;
     font-style: oblique;
     font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
 }
 
 .footer {
@@ -48,5 +72,7 @@
     background-color: orange;
     color: black;
     text-align: center;
-    line-height: 22px;
+    line-height: 25px;
+    font-size: 20px;
+    padding:1px;
 }
