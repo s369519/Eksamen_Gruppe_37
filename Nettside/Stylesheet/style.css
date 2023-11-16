@@ -1,5 +1,6 @@
 body{
-    margin:0;                                   /*Gjør at navbaren kommer het opp på nettsiden, uten mellomrom*/
+    margin:0;
+    font-family: sans-serif;                                   /*Gjør at navbaren kommer het opp på nettsiden, uten mellomrom*/
 }
 
 .navbar {
@@ -12,7 +13,7 @@ body{
     margin-top: 0%;                             /*Setter margen til 0px*/
 }
 
-.navbar a {
+.navbar a {                                     /*Endrer form, farge og fasong på knappene til de ulike sidene*/
     font-weight: bold;
     font-size: 20px;
     float: left;
@@ -20,19 +21,19 @@ body{
     color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 80px;
-    text-decoration: none;
+    text-decoration: none;                      /*Fjerner strekene under hyperkoblingene*/
 }
 
-.navbar a:hover {
+.navbar a:hover {                               /*Gir knappen du har musepekeren på en annen farge*/
     background-color:rgb(206, 131, 18);
 }
 
-.navbar a.active {
+.navbar a.active {                              /*Gjør at navbaren viser hvilken side du er på, ved å endre farge på den hyperlinken*/
     background-color: rgb(253, 211, 96);
     color: rgb(0, 0, 0);
 }
 
-@media (max-width: 1250px) {    /*gjør at navigasjonsbaren blir listet nedover, slik at den er bedre for telefon. Har også endret slik at navbaren ikke følger med siden da den opptar mye plass*/
+@media (max-width: 1301px) {                    /*gjør at navigasjonsbaren blir listet nedover, slik at den er bedre for telefon. Har også endret slik at navbaren ikke følger med siden da den opptar mye plass*/
     .navbar a{
         float:none;                 
         font-size: 15px;
@@ -44,31 +45,28 @@ body{
 }
 
 
-.OverskriftP1 {
-    font-size: xx-large;
-    font-family: sans-serif;
-    padding-top: 60px;
+.overskrift1 {                                  /*Endrer størrelse på overskrift, samt gir mellomrom mellom overskriftene og det rundt*/
+    font-size: xx-large;                         
+    margin-top: 60px;
     margin-left: 30px;
 }
 
-.image1 {
+.image1 {                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
     background-image: url("bilde/Background1.jpg");
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.skrift1 {
+.skrift1 {                                      /*Endrer størrelse på paragraf, og gir mellomrom til margen på venstre side for å være lik som overskriften*/
     font-size: medium;
-    font-style: oblique;
-    font-family: 'Times New Roman', Times, serif;
     margin-left: 30px;
 }
 
-.footer {
+.footer {                                       /*Gir footeren en farge, og endrer form og fasong på skriften i den. Gjør også at footeren tar opp hele bredden av skjermen*/
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     background-color: orange;
     color: black;
     text-align: center;
