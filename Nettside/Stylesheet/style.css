@@ -3,67 +3,39 @@ body{
     font-family: sans-serif;                                   /*Gjør at navbaren kommer het opp på nettsiden, uten mellomrom*/
 }
 
-.navbar {
-    overflow: hidden;                           /*For å fjerne uønsket scrolling som viser mellomrommet vi fjernet i body*/
-    position: fixed;                            /*For å på navbaren til å holde seg i bildet, selv når man scroller*/
-    top: 0;                                     /*Plasserer navbaren 0px fra toppen*/
-    width: 100vw;                               /*Setter vidden til hele slik at det ikke blir hvite kanter*/
-    background-color: orange;
-    color: #fff;
-    margin-top: 0%;                             /*Setter margen til 0px*/
-}
-
-.navbar a {                                     /*Endrer form, farge og fasong på knappene til de ulike sidene*/
-    font-weight: bold;
-    font-size: 20px;
-    float: left;
-    display: block;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 14px 80px;
-    text-decoration: none;                      /*Fjerner strekene under hyperkoblingene*/
-}
-
-.navbar a:hover {                               /*Gir knappen du har musepekeren på en annen farge*/
+.navbar a:hover {                                               /*Gir knappen du har musepekeren på en annen farge*/
     background-color:rgb(206, 131, 18);
 }
 
-.navbar a.active {                              /*Gjør at navbaren viser hvilken side du er på, ved å endre farge på den hyperlinken*/
+.navbar a.active {                                              /*Gjør at navbaren viser hvilken side du er på, ved å endre farge på den hyperlinken*/
     background-color: rgb(253, 211, 96);
     color: rgb(0, 0, 0);
 }
 
-@media (max-width: 1301px) {                    /*gjør at navigasjonsbaren blir listet nedover, slik at den er bedre for telefon. Har også endret slik at navbaren ikke følger med siden da den opptar mye plass*/
-    .navbar a{
-        float:none;                 
-        font-size: 15px;
-        padding: 4px 20px
-    }
-    .navbar{
-        position: sticky;
-    }
-}
-
-
-.overskrift1 {                                  /*Endrer størrelse på overskrift, samt gir mellomrom mellom overskriftene og det rundt*/
+.overskrift1 {                                                  /*Endrer størrelse på overskrift, samt gir mellomrom mellom overskriftene og det rundt*/
     font-size: xx-large;                         
     margin-top: 60px;
     margin-left: 30px;
 }
 
-.image1 {                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
-    background-image: url("bilde/Background1.jpg");
+.image1 {                                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
+    background-image: url("/bilde/Background1.jpg");
+    background-size: cover;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 }
 
-.skrift1 {                                      /*Endrer størrelse på paragraf, og gir mellomrom til margen på venstre side for å være lik som overskriften*/
+.image_p35{
+    background-image: url("/Images/p35_2.jpg");
+    max-width: 320px;
+}
+
+.skrift1 {                                                      /*Endrer størrelse på paragraf, og gir mellomrom til margen på venstre side for å være lik som overskriften*/
     font-size: medium;
     margin-left: 30px;
 }
 
-.footer {                                       /*Gir footeren en farge, og endrer form og fasong på skriften i den. Gjør også at footeren tar opp hele bredden av skjermen*/
+.footer {                                                       /*Gir footeren en farge, og endrer form og fasong på skriften i den. Gjør også at footeren tar opp hele bredden av skjermen*/
     left: 0;
     bottom: 0;
     width: 100vw;
@@ -73,4 +45,105 @@ body{
     line-height: 25px;
     font-size: 20px;
     padding:1px;
+}
+
+/*Hamburer meny*/ 
+/* Kilde for oppsett av denne: https://oslomet.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e07c0035-72e8-41fd-a7de-b09800a14526(Canvas > DATA1200 > Lecture notes > CompletePage_02_Simple-Burger-menu*/
+
+#burger-toggle{
+    display: none;
+}
+
+@media (min-width: 701px) {
+    .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    overflow: hidden;                                       /*For å fjerne uønsket scrolling som viser mellomrommet vi fjernet i body*/
+    position: fixed;                                        /*For å på navbaren til å holde seg i bildet, selv når man scroller*/
+    top: 0;                                                 /*Plasserer navbaren 0px fra toppen*/
+    width: 100vw;                                           /*Setter vidden til hele slik at det ikke blir hvite kanter*/
+    background-color: orange;
+    color: #fff;  
+    margin-top: 0;
+}
+
+.navbar a{
+    padding-right: 4rem;
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 80px;
+    text-decoration: none; 
+}
+}
+
+@media (max-width: 700px){
+    .navbar{
+        list-style-type: none;
+        position: sticky;
+        padding-left: 0px;
+        float: right;
+    }
+
+    .navbar a{
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+    }
+
+    .navbar-icon{
+        display: block;
+        background-color: rgb(255, 255, 255);
+        background-image: url(../images/menu.svg);
+        background-size: cover;
+        height: 50px;
+        width:50px;
+    }
+
+    .hamburger-toggle-container{
+        cursor: pointer;
+    }
+
+    .navbar li{
+        height: 0px;
+        overflow:hidden;
+        text-decoration: none; 
+    }
+
+    #burger-toggle:checked ~ .navbar li{
+        height: 1rem;
+        width: auto;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        padding-bottom: 0.5rem;
+        background-color: orange;
+    }
+
+    nav{
+        display: flex;
+        height: 40px;
+    }
+
+    .navbar{
+        margin-top:0;
+        width: auto;
+    }
+    
+    .navbar a{
+        font-size: 15px;
+        padding: 14px 80px;
+    }
+}
+
+@media (max-width: 1300px){
+    .navbar a{
+        font-weight: bold;
+        font-size: 20px;
+        padding: 14px 20px;
+    }
 }
