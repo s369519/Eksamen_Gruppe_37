@@ -3,6 +3,11 @@ body{                                                           /*Definerer font
     font-family: sans-serif;                                   
 }
 
+.wrapper {
+margin: 80px auto;
+width: 90%;
+}
+
 .navbar a:hover {                                               /*Gir knappen du har musepekeren på i navbaren en annen farge*/
     background-color:rgb(206, 131, 18);
 }
@@ -21,6 +26,7 @@ body{                                                           /*Definerer font
 .underoverskrift{                                               /*Gjør underoverskrifter mindre enn overskrifter*/
     font-size: large;
     margin-left: 30px;
+    margin-top: 60px;
 }
 
 .image1 {                                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
@@ -51,12 +57,19 @@ body{                                                           /*Definerer font
     background-image: url("Images/bibliotek.jpg");
     width: 400px;
     height: 400px;
+    margin-top: 25px;
+}
+.image_kantine{
+    width: 400px;
+    height: 400px;
+    margin-top: 25px;
 }
 
 .Link_prototype {
     font-size: medium;
     margin-left: 30px;
 }
+
 
 .skrift1 {                                                      /*Endrer størrelse på paragraf, og gir mellomrom til margen på venstre side for å være lik som overskriften*/
     font-size: medium;
