@@ -39,7 +39,8 @@ body{
 }
 
 .image_p35{
-    max-width: 320px;
+    margin-left: 30px;
+    max-height: 320px;
 }
 
 .Link_prototype {
@@ -62,6 +63,33 @@ body{
     line-height: 25px;
     font-size: 20px;
     padding:1px;
+}
+
+.p35{
+    background-color: rgb(52, 52, 52);
+    color: white;
+
+    .footer{
+        background-color: darkslategray;
+        color:white;
+    }
+
+    .navbar{
+        background-color: darkslategray;
+    }
+
+    .navbar a{
+        color: white;
+    }
+
+    .navbar a:hover{
+        background-color: rgb(39, 65, 65);
+    }
+
+    .navbar a.active{
+        background-color: rgb(69, 114, 114);
+        color: white;
+    }
 }
 
 /*Hamburer meny*/ 
