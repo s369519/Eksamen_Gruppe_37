@@ -18,6 +18,11 @@ body{
     margin-left: 30px;
 }
 
+.underoverskrift{
+    font-size: large;
+    margin-left: 30px;
+}
+
 .image1 {                                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
     background-size: cover;
     width: 100%;
@@ -44,6 +49,12 @@ body{
 .Link_prototype {
     font-size: medium;
     margin-left: 30px;
+}
+
+.image_bibliotek{
+    background-image: url("Images/bibliotek.jpg");
+    width: 50%;
+    height: 60%;
 }
 
 .skrift1 {                                                      /*Endrer størrelse på paragraf, og gir mellomrom til margen på venstre side for å være lik som overskriften*/
