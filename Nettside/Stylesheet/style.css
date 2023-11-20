@@ -1,9 +1,9 @@
-body{
+body{                                                           /*Definerer fonten til body for nettsiden, og at margen er 0*/
     margin:0;
-    font-family: sans-serif;                                   /*Gjør at navbaren kommer het opp på nettsiden, uten mellomrom*/
+    font-family: sans-serif;                                   
 }
 
-.navbar a:hover {                                               /*Gir knappen du har musepekeren på en annen farge*/
+.navbar a:hover {                                               /*Gir knappen du har musepekeren på i navbaren en annen farge*/
     background-color:rgb(206, 131, 18);
 }
 
@@ -18,7 +18,7 @@ body{
     margin-left: 30px;
 }
 
-.underoverskrift{
+.underoverskrift{                                               /*Gjør underoverskrifter mindre enn overskrifter*/
     font-size: large;
     margin-left: 30px;
 }
@@ -29,21 +29,20 @@ body{
     height: 100%;
 }
 
-.image_prototype1 {
+.image_prototype1 {                                             /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
     background-size: cover;
     width: 100%;
     height: 100%;
-
 }
 
-.image_prototype2 {
+.image_prototype2 {                                            /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
     background-size: cover;
     width: 100%;
     height: 100%;
-
 }
 
-.image_p35{
+.image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
+    background-size: cover;
     margin-left: 30px;
     max-height: 320px;
 }
@@ -84,24 +83,28 @@ body{
         background-color: darkslategray;
         color:white;
     }
-
     .navbar{
         background-color: darkslategray;
     }
-
-    .navbar a{
-        color: white;
+    .navbar a{                                               /*Endrer farger for å passe til siden*/
+        background-color: darkslategray;
+        color: white;  
     }
-
-    .navbar a:hover{
+    .navbar a:hover{                                         /*Endrer farger for å passe til siden*/
         background-color: rgb(39, 65, 65);
     }
-
-    .navbar a.active{
+    .navbar a.active{                                        /*Endrer farger for å passe til siden*/
         background-color: rgb(69, 114, 114);
         color: white;
     }
+    .navbar-icon{                                            /*Endrer farger for å passe til siden*/
+        background-color: darkslategray;
+    }
+    #burger-toggle:checked ~ .navbar li{                     /*Endrer fargene mellom knappene til sidene*/
+        background-color: darkslategray;
+    }
 }
+
 
 /*Hamburer meny*/ 
 /* Kilde for oppsett av denne: https://oslomet.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e07c0035-72e8-41fd-a7de-b09800a14526(Canvas > DATA1200 > Lecture notes > CompletePage_02_Simple-Burger-menu*/
@@ -111,7 +114,7 @@ body{
 }
 
 @media (min-width: 701px) {
-    .navbar{
+    .navbar{                                                /*Setter verdier for navbaren der skjermen er min. 701px bred*/
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -124,7 +127,7 @@ body{
     margin-top: 0;
 }
 
-.navbar a{
+.navbar a{                                                  /*Setter verdier for "a" elementene i navbaren der skjermen er min. 701px bred*/
     padding-right: 4rem;
     font-weight: bold;
     font-size: 20px;
@@ -138,39 +141,43 @@ body{
 }
 
 @media (max-width: 700px){
-    .navbar{
+    .navbar{                                                /*Setter verdier for navbaren der skjermen er maks 700px bred*/
         list-style-type: none;
         position: sticky;
         padding-left: 0px;
         float: right;
+        margin-top:0;
+        width: auto;
     }
 
-    .navbar a{
+    .navbar a{                                              /*Setter verdier for "a" elementene i navbaren der skjermen er maks 700px bred*/
         text-decoration: none;
         color: black;
         font-weight: bold;
+        font-size: 15px;
+        padding: 14px 80px; 
     }
 
-    .navbar-icon{
+    .navbar-icon{                                           /*Definerer ikonet for hamburgermenyen som skal bytte ut navbaren*/
         display: block;
-        background-color: rgb(255, 255, 255);
+        background-color: orange;
         background-image: url(../images/menu.svg);
         background-size: cover;
         height: 50px;
         width:50px;
     }
 
-    .hamburger-toggle-container{
+    .hamburger-toggle-container{                            /*Gjør at musepekeren endrer seg når den er på hamburgermeny-ikonet, slik at man vet at det er en knapp*/
         cursor: pointer;
     }
 
-    .navbar li{
+    .navbar li{                                             /*Setter verdier for "li" elementene i navbar-klassen for å gjøre den penere*/
         height: 0px;
         overflow:hidden;
         text-decoration: none; 
     }
 
-    #burger-toggle:checked ~ .navbar li{
+    #burger-toggle:checked ~ .navbar li{                   /*Setter verdier for menyen som kommer når man trykker på hamburgermenyen*/
         height: 1rem;
         width: auto;
         padding-left: 0.5rem;
@@ -179,26 +186,16 @@ body{
         background-color: orange;
     }
 
-    nav{
+    nav{                                                    /*Setter verdier for "nav" elementene*/
         display: flex;
         height: 40px;
     }
-
-    .navbar{
-        margin-top:0;
-        width: auto;
-    }
-    
-    .navbar a{
-        font-size: 15px;
-        padding: 14px 80px;
-    }
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1300px){                                /*Skalerer navbar for alt mellom tlf og desktop (701px-1300px)*/
     .navbar a{
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
         padding: 14px 20px;
     }
 }
