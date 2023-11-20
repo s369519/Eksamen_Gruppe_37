@@ -28,14 +28,12 @@ body{
     background-size: cover;
     width: 100%;
     height: 100%;
-
 }
 
 .image_prototype2 {
     background-size: cover;
     width: 100%;
     height: 100%;
-
 }
 
 .image_p35{
@@ -76,21 +74,32 @@ body{
 
     .navbar{
         background-color: darkslategray;
+        
     }
 
-    .navbar a{
+    .navbar a{                                               /*Endrer farger for å passe til siden*/
+        background-color: darkslategray;
         color: white;
+        
     }
 
-    .navbar a:hover{
+    .navbar a:hover{                                         /*Endrer farger for å passe til siden*/
         background-color: rgb(39, 65, 65);
     }
 
-    .navbar a.active{
+    .navbar a.active{                                        /*Endrer farger for å passe til siden*/
         background-color: rgb(69, 114, 114);
         color: white;
     }
+
+    .navbar-icon{                                            /*Endrer farger for å passe til siden*/
+        background-color: darkslategray;
+    }
+    #burger-toggle:checked ~ .navbar li{                     /*Endrer fargene mellom knappene til sidene*/
+        background-color: darkslategray;
+    }
 }
+
 
 /*Hamburer meny*/ 
 /* Kilde for oppsett av denne: https://oslomet.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e07c0035-72e8-41fd-a7de-b09800a14526(Canvas > DATA1200 > Lecture notes > CompletePage_02_Simple-Burger-menu*/
@@ -132,17 +141,21 @@ body{
         position: sticky;
         padding-left: 0px;
         float: right;
+        margin-top:0;
+        width: auto;
     }
 
     .navbar a{
         text-decoration: none;
         color: black;
         font-weight: bold;
+        font-size: 15px;
+        padding: 14px 80px; 
     }
 
     .navbar-icon{
         display: block;
-        background-color: rgb(255, 255, 255);
+        background-color: orange;
         background-image: url(../images/menu.svg);
         background-size: cover;
         height: 50px;
@@ -172,19 +185,9 @@ body{
         display: flex;
         height: 40px;
     }
-
-    .navbar{
-        margin-top:0;
-        width: auto;
-    }
-    
-    .navbar a{
-        font-size: 15px;
-        padding: 14px 80px;
-    }
 }
 
-@media (max-width: 1300px){
+@media (max-width: 1300px){         /*Skalerer navbar for alt mellom tlf og desktop (701px-1300px)*/
     .navbar a{
         font-weight: bold;
         font-size: 20px;
