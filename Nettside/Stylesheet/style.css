@@ -41,9 +41,10 @@ dl {
 }
 
 .image1 {                                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
+    background-image: url("../Images/OsloMet.jpg");
+    min-height: 600px;
+    background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 100%;
 }
 
 .image_prototype1 {                                             /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
@@ -180,12 +181,13 @@ dl {
 .navbar_p35 a.active {                                              /*Gjør at navbaren viser hvilken side du er på, ved å endre farge på den hyperlinken*/
     background-color: rgb(77, 129, 129);
 }
-.foto_creds {                                                       /*Legger tekst nede til venstre i et element*/
+.foto_creds {                                                       /*Legger tekst nede til venstre i et bilder*/
+    background-color: rgb(255, 255, 255);
     margin-left: 10px;
     position: absolute;
-    bottom: 8px;
+    bottom: 30px;
     left: 16px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: bolder;
   }
