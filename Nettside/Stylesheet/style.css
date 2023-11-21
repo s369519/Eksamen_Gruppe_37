@@ -115,8 +115,9 @@ body{                                                           /*Definerer font
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
-.container_p35{                                                         /*Bestemmer posisjon på navbaren, og størrelse på skriften i den*/
+.container_navbar_p35{                                                         /*Bestemmer posisjon på navbaren, og størrelse på skriften i den*/
     position: absolute;
     margin: 20px;
     width: auto;
