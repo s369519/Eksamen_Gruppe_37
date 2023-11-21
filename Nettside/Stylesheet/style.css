@@ -26,6 +26,7 @@ body{                                                           /*Definerer font
 
 .ul_topical {
     text-decoration: none;
+    
 }
 
 dd, dt {
@@ -37,7 +38,8 @@ dd, dt {
 
 dl {
     border: 5px solid orange;
-    border-radius: 5px
+    border-radius: 20px;
+    padding-top: 10px;
 }
 
 .image1 {                                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
