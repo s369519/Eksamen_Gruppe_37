@@ -62,8 +62,7 @@ dl {
 
 .image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
     background-size: cover;
-    margin-left: 250px;
-    max-height: 260px;
+    max-height: 240px;
 }
 
 .image_bibliotek{
@@ -118,6 +117,7 @@ dl {
     width: 50%;
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
+    text-align: center;
   }
   
   /* Clear floats after the columns */
@@ -187,7 +187,7 @@ dl {
     position: absolute;
     bottom: 8px;
     left: 16px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: bolder;
   }
