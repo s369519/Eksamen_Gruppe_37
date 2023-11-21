@@ -108,15 +108,16 @@ body{                                                           /*Definerer font
     }
 }
 .navbar_img_p35{ 
-    alt:"Foto: https://www.eurosign.no/prosjekter/oslomet";              /*Definerer størrelse og skalering, sikrer også at bildet ikke repeterer seg, eller ikke fyller ut den tildelte plassen */
-    background-image: url("../Images/p35_top.jpg");
-    min-height: 380px;
+    alt:"Foto: Arthur Thonrud Flotvik";              /*Definerer størrelse og skalering, sikrer også at bildet ikke repeterer seg, eller ikke fyller ut den tildelte plassen */
+    background-image: url("../Images/p35_top.webp");
+    min-height: 403.2px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
-.container_p35{                                                         /*Bestemmer posisjon på navbaren, og størrelse på skriften i den*/
+.container_navbar_p35{                                                         /*Bestemmer posisjon på navbaren, og størrelse på skriften i den*/
     position: absolute;
     margin: 20px;
     width: auto;
