@@ -3,11 +3,6 @@ body{                                                           /*Definerer font
     font-family: sans-serif;                                   
 }
 
-.wrapper {
-margin: 80px auto;
-width: 90%;
-}
-
 .navbar a:hover {                                               /*Gir knappen du har musepekeren på i navbaren en annen farge*/
     background-color:rgb(206, 131, 18);
 }
@@ -72,7 +67,7 @@ width: 90%;
     margin-top: 25px;
 }
 
-.image_kantine{
+.image_datatorget{
     width: 400px;
     height: 400px;
     margin-top: 25px;
