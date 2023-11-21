@@ -58,7 +58,7 @@ dl {
     width: auto;
     height: auto;
     float: center;
-}
+}   
 
 .image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
     background-size: cover;
