@@ -3,6 +3,11 @@ body{                                                           /*Definerer font
     font-family: sans-serif;                                   
 }
 
+.wrapper {
+margin: 80px auto;
+width: 90%;
+}
+
 .navbar a:hover {                                               /*Gir knappen du har musepekeren på i navbaren en annen farge*/
     background-color:rgb(206, 131, 18);
 }
@@ -21,6 +26,7 @@ body{                                                           /*Definerer font
 .underoverskrift{                                               /*Gjør underoverskrifter mindre enn overskrifter*/
     font-size: large;
     margin-left: 30px;
+    margin-top: 60px;
 }
 
 .ul_topical {
@@ -50,20 +56,32 @@ body{                                                           /*Definerer font
 .image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
     background-size: cover;
     margin-left: 30px;
+<<<<<<< HEAD
     max-height: 320px;
     
+=======
+    height: 204.8px;
+    width: 153.6px;
+>>>>>>> 93a1bfb536d3b42e09020253155cbbe8fae35c4c
 }
 
 .image_bibliotek{
     background-image: url("Images/bibliotek.jpg");
     width: 400px;
     height: 400px;
+    margin-top: 25px;
+}
+.image_kantine{
+    width: 400px;
+    height: 400px;
+    margin-top: 25px;
 }
 
 .Link_prototype {
     font-size: medium;
     margin-left: 30px;
 }
+
 
 .skrift1 {                                                      /*Endrer størrelse på paragraf, og gir mellomrom til margen på venstre side for å være lik som overskriften*/
     font-size: medium;
@@ -82,35 +100,58 @@ body{                                                           /*Definerer font
     padding:1px;
 }
 
-.p35{
-    background-color: rgb(52, 52, 52);
+/*navbar for Pilestredet.html*/
+.p35{                                                                    /*Endrer farge på skrift og bakgrunn, samt definerer elementers bredde og høyde*/
+    box-sizing: border-box;                 
+    background-color: #525252;
     color: white;
 
-    .footer{
+    .footer{                                                            /*Endrer farge på footeren for å være lik den nye navbaren*/
         background-color: darkslategray;
-        color:white;
-    }
-    .navbar{
-        background-color: darkslategray;
-    }
-    .navbar a{                                               /*Endrer farger for å passe til siden*/
-        background-color: darkslategray;
-        color: white;  
-    }
-    .navbar a:hover{                                         /*Endrer farger for å passe til siden*/
-        background-color: rgb(39, 65, 65);
-    }
-    .navbar a.active{                                        /*Endrer farger for å passe til siden*/
-        background-color: rgb(69, 114, 114);
         color: white;
     }
-    .navbar-icon{                                            /*Endrer farger for å passe til siden*/
-        background-color: darkslategray;
-    }
-    #burger-toggle:checked ~ .navbar li{                     /*Endrer fargene mellom knappene til sidene*/
-        background-color: darkslategray;
-    }
 }
+.navbar_img_p35{ 
+    alt:"Foto: https://www.eurosign.no/prosjekter/oslomet";              /*Definerer størrelse og skalering, sikrer også at bildet ikke repeterer seg, eller ikke fyller ut den tildelte plassen */
+    background-image: url("../Images/p35_top.jpg");
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.container_p35{                                                         /*Bestemmer posisjon på navbaren, og størrelse på skriften i den*/
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+.navbar_p35{                                                            /*Gir hyperlinkene en bagrunnsfarge så de er lette å se, og bestemmer at overflødig innholod skal skjules*/
+    overflow: hidden;
+    background-color: darkslategray;
+}
+.navbar_p35 a{                                                          /*Definerer størrelse og fasong på linkene eller "a" elementene i navbaren*/
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbar_p35 a:hover{                                                /*Endrer farge på navbaren når musepekeren er på den*/
+    background-color: rgb(77, 129, 129);
+}
+.navbar_p35 a.active {                                              /*Gjør at navbaren viser hvilken side du er på, ved å endre farge på den hyperlinken*/
+    background-color: rgb(77, 129, 129);
+}
+.foto_creds {                                                       /*Legger tekst nede til venstre i et element*/
+    margin-left: 10px;
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bolder;
+  }
 
 
 /*Hamburer meny*/ 
