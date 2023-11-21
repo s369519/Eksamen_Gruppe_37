@@ -64,9 +64,8 @@ dl {
 
 .image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
     background-size: cover;
-    max-height: 250px;
-    padding-top: 40px;
-    padding-bottom: 0px;
+    max-height: 310px;
+    padding-top: 10px;
 }
 
 .image_bibliotek{
