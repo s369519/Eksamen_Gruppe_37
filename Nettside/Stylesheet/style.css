@@ -14,8 +14,8 @@ body{                                                           /*Definerer font
 
 .overskrift1 {                                                  /*Endrer størrelse på overskrift, samt gir mellomrom mellom overskriftene og det rundt*/
     font-size: xx-large;                         
-    margin-top: 60px;
-    margin-left: 30px;
+    margin-top: 80px;
+    text-align: center;
 }
 
 .underoverskrift{                                               /*Gjør underoverskrifter mindre enn overskrifter*/
@@ -48,16 +48,16 @@ dl {
 
 .image_prototype1 {                                             /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
     background-size: cover;
-    max-height: 340px;
-    padding-top: 40px;
+    max-height: 350px;
+    padding-top: 60px;
     padding-bottom: 40px;
 
 }
 
 .image_prototype2 {                                            /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
     background-size: cover;
-    max-height: 300px;
-    padding-top: 40px;
+    max-height: 350px;
+    padding-top: 60px;
     padding-bottom: 40px;
 
 }   
@@ -115,8 +115,8 @@ dl {
     float: left;
     width: 50%;
     padding: 5px;
-    height: 300px; /* Should be removed. Only for demonstration */
     text-align: center;
+
   }
   
   /* Clear floats after the columns */
