@@ -56,7 +56,7 @@ dl {
 
 .image_prototype2 {                                            /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
     background-size: cover;
-    max-height: 340px;
+    max-height: 300px;
     padding-top: 40px;
     padding-bottom: 40px;
 
@@ -64,9 +64,9 @@ dl {
 
 .image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
     background-size: cover;
-    max-height: 340px;
+    max-height: 250px;
     padding-top: 40px;
-    padding bottom: 40px;
+    padding-bottom: 0px;
 }
 
 .image_bibliotek{
@@ -114,7 +114,7 @@ dl {
 .column {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding: 5px;
     height: 300px; /* Should be removed. Only for demonstration */
     text-align: center;
   }
