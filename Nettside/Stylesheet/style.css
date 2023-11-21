@@ -41,7 +41,7 @@ dl {
     padding-top: 10px;
 }
 
-.image1 {                                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
+.image_hovedside {                                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
     background-image: url("../Images/OsloMet.webp");
     min-height: 600px;
     background-position: center;
@@ -53,16 +53,8 @@ dl {
     max-height: 350px;
     padding-top: 60px;
     padding-bottom: 40px;
-
 }
-
-.image_prototype2 {                                            /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
-    background-size: cover;
-    max-height: 350px;
-    padding-top: 60px;
-    padding-bottom: 40px;
-}   
-
+                          
 .image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
     background-size: cover;
     max-height: 310px;
