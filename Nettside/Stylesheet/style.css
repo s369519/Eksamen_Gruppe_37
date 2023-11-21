@@ -12,13 +12,13 @@ body{                                                           /*Definerer font
     color: rgb(0, 0, 0);
 }
 
-.overskrift1 {                                                  /*Endrer størrelse på overskrift, samt gir mellomrom mellom overskriftene og det rundt*/
+.overskrifter {                                                  /*Endrer størrelse på overskrift, samt gir mellomrom mellom overskriftene og det rundt*/
     font-size: xx-large;                         
     margin-top: 80px;
     text-align: center;
 }
 
-.underoverskrift{                                               /*Gjør underoverskrifter mindre enn overskrifter*/
+.underoverskrifter {                                               /*Gjør underoverskrifter mindre enn overskrifter*/
     font-size: large;
     margin-left: 30px;
     margin-top: 60px;
@@ -46,21 +46,14 @@ dl {
     height: 100%;
 }
 
-.image_prototype1 {                                             /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
+.image_prototyper {                                             /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
     background-size: cover;
     max-height: 350px;
     padding-top: 60px;
     padding-bottom: 40px;
 
 }
-
-.image_prototype2 {                                            /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
-    background-size: cover;
-    max-height: 350px;
-    padding-top: 60px;
-    padding-bottom: 40px;
-
-}   
+                                         
 
 .image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
     background-size: cover;
@@ -69,26 +62,20 @@ dl {
     padding-bottom: 0px;
 }
 
-.image_bibliotek{
+.images_campus{
     width: 400px;
-    height: 400px;
+    height: auto;
     margin-left: 25px;
+    
 }
 .image_kantine{
-    width: 400px;
-    height: 400px;
+    width: 232.3px;
+    height: 222px;
     margin-left: 25px;
     
 }
 
-.image_datatorget{
-    width: 400px;
-    height: 400px;
-    margin-left: 25px;
-}
-
-
-.skrift1 {                                                      /*Endrer størrelse på paragraf, og gir mellomrom til margen på venstre side for å være lik som overskriften*/
+.paragrafer {                                                      /*Endrer størrelse på paragraf, og gir mellomrom til margen på venstre side for å være lik som overskriften*/
     font-size: medium;
     margin-left: 30px;
 }
