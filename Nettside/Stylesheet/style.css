@@ -69,15 +69,22 @@ dl {
     padding-top: 10px;
 }
 
-.images_campus{
-    width: 400px;
-    height: auto;
+.image_datatorget{
+    width: 302.4px;
+    height: 353.2px;
     margin-left: 25px;
     
 }
+
+.image_bibliotek{
+    width: 277.5px;
+    height: 290.375px;
+    margin-left: 25px;
+}
+
 .image_kantine{
-    width: 232.3px;
-    height: 222px;
+    width: 302.4px;
+    height: 298.6px;
     margin-left: 25px;
 }
 
