@@ -100,7 +100,9 @@ dl {
 
 
 /*Tatt fra https://www.w3schools.com/howto/howto_css_two_columns.asp*/
-* { box-sizing: border-box; }
+* { 
+    box-sizing: border-box; 
+}
 
 .column {                       /*Lager to kolonner ved siden av hverandre der begge kolonner tar 50% av bredden*/
     float: left;
@@ -129,7 +131,7 @@ dl {
     }
 }
 .navbar_img_p35{ 
-    alt:"Foto: Arthur Thonrud Flotvik";                             /*Definerer størrelse og skalering, sikrer også at bildet ikke repeterer seg, eller ikke fyller ut den tildelte plassen */
+    alt:"Inngang P35";                                                  /*Definerer størrelse og skalering, sikrer også at bildet ikke repeterer seg, eller ikke fyller ut den tildelte plassen */
     background-image: url("../Images/p35_top.webp");
     min-height: 403.2px;
     background-position: center;
@@ -165,7 +167,7 @@ dl {
     background-color: rgb(255, 255, 255);
     margin-left: 10px;
     position: absolute;
-    bottom: 30px;
+    bottom: 55px;
     left: 16px;
     color: rgb(0, 0, 0);
     font-size: 18px;
