@@ -48,21 +48,25 @@ dl {
 
 .image_prototype1 {                                             /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
     background-size: cover;
-    width: auto;
-    height: auto;
-    float: left;
+    max-height: 340px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 }
 
 .image_prototype2 {                                            /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
     background-size: cover;
-    width: auto;
-    height: auto;
-    float: center;
+    max-height: 340px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
 }   
 
 .image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
     background-size: cover;
-    max-height: 240px;
+    max-height: 340px;
+    padding-top: 40px;
+    padding bottom: 40px;
 }
 
 .image_bibliotek{
@@ -81,11 +85,6 @@ dl {
     width: 400px;
     height: 400px;
     margin-left: 25px;
-}
-
-.Link_prototype {
-    font-size: medium;
-    margin-left: 30px;
 }
 
 
