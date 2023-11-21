@@ -37,13 +37,15 @@ dd, dt {
 
 dl {
     border: 5px solid orange;
-    border-radius: 5px
+    border-radius: 20px;
+    padding-top: 10px;
 }
 
 .image1 {                                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
+    background-image: url("../Images/OsloMet.webp");
+    min-height: 600px;
+    background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 100%;
 }
 
 .image_prototyper {                                             /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
@@ -53,13 +55,18 @@ dl {
     padding-bottom: 40px;
 
 }
-                                         
+
+.image_prototype2 {                                            /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
+    background-size: cover;
+    max-height: 350px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}   
 
 .image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
     background-size: cover;
-    max-height: 250px;
-    padding-top: 40px;
-    padding-bottom: 0px;
+    max-height: 310px;
+    padding-top: 10px;
 }
 
 .images_campus{
@@ -72,7 +79,6 @@ dl {
     width: 232.3px;
     height: 222px;
     margin-left: 25px;
-    
 }
 
 .paragrafer {                                                      /*Endrer størrelse på paragraf, og gir mellomrom til margen på venstre side for å være lik som overskriften*/
@@ -93,34 +99,21 @@ dl {
 }
 
 
-* {
-    box-sizing: border-box;
-  }
+/*Tatt fra https://www.w3schools.com/howto/howto_css_two_columns.asp*/
+* { box-sizing: border-box; }
 
-/* Create two equal columns that floats next to each other */
-.column {
+.column {                       /*Lager to kolonner ved siden av hverandre der begge kolonner tar 50% av bredden*/
     float: left;
     width: 50%;
     padding: 5px;
     text-align: center;
-
   }
   
-  /* Clear floats after the columns */
-  .row:after {
+  .row:after {                      /*For å tilpasse høyde etter innhold*/
     content: "";
     display: table;
     clear: both;
   }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -136,7 +129,7 @@ dl {
     }
 }
 .navbar_img_p35{ 
-    alt:"Foto: Arthur Thonrud Flotvik";              /*Definerer størrelse og skalering, sikrer også at bildet ikke repeterer seg, eller ikke fyller ut den tildelte plassen */
+    alt:"Foto: Arthur Thonrud Flotvik";                             /*Definerer størrelse og skalering, sikrer også at bildet ikke repeterer seg, eller ikke fyller ut den tildelte plassen */
     background-image: url("../Images/p35_top.webp");
     min-height: 403.2px;
     background-position: center;
@@ -145,7 +138,7 @@ dl {
     position: relative;
     overflow: hidden;
 }
-.container_navbar_p35{                                                         /*Bestemmer posisjon på navbaren, og størrelse på skriften i den*/
+.container_navbar_p35{                                                   /*Bestemmer posisjon på navbaren, og størrelse på skriften i den*/
     position: absolute;
     margin: 20px;
     width: auto;
@@ -168,21 +161,22 @@ dl {
 .navbar_p35 a.active {                                              /*Gjør at navbaren viser hvilken side du er på, ved å endre farge på den hyperlinken*/
     background-color: rgb(77, 129, 129);
 }
-.foto_creds {                                                       /*Legger tekst nede til venstre i et element*/
+.foto_creds {                                                       /*Legger tekst nede til venstre i et bilder*/
+    background-color: rgb(255, 255, 255);
     margin-left: 10px;
     position: absolute;
-    bottom: 8px;
+    bottom: 30px;
     left: 16px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 18px;
     font-weight: bolder;
   }
 
 
 /*Hamburer meny*/ 
-/* Kilde for oppsett av denne: https://oslomet.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e07c0035-72e8-41fd-a7de-b09800a14526(Canvas > DATA1200 > Lecture notes > CompletePage_02_Simple-Burger-menu*/
+/* Kilde for oppsett av denne: https://oslomet.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e07c0035-72e8-41fd-a7de-b09800a14526(Canvas eller > DATA1200 > Lecture notes > CompletePage_02_Simple-Burger-menu*/
 
-#burger-toggle{
+#burger-toggle{                                          /*Skjuler alle elementer med id:burger-toggle*/
     display: none;
 }
 
