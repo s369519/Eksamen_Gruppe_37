@@ -28,6 +28,18 @@ body{                                                           /*Definerer font
     text-decoration: none;
 }
 
+dd, dt {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: large;
+}
+
+dl {
+    border: 5px solid orange;
+    border-radius: 5px
+}
+
 .image1 {                                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
     background-size: cover;
     width: 100%;
