@@ -26,7 +26,6 @@ body{                                                           /*Definerer font
 
 .ul_topical {
     text-decoration: none;
-    
 }
 
 dd, dt {
@@ -43,7 +42,7 @@ dl {
 }
 
 .image1 {                                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
-    background-image: url("../Images/OsloMet.jpg");
+    background-image: url("../Images/OsloMet.webp");
     min-height: 600px;
     background-position: center;
     background-size: cover;
