@@ -29,6 +29,10 @@ width: 90%;
     margin-top: 60px;
 }
 
+.ul_topical {
+    text-decoration: none;
+}
+
 .image1 {                                                       /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/   
     background-size: cover;
     width: 100%;
@@ -37,21 +41,28 @@ width: 90%;
 
 .image_prototype1 {                                             /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    float: left;
 }
 
 .image_prototype2 {                                            /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold*/
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    float: center;
 }
 
 .image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
     background-size: cover;
     margin-left: 30px;
+<<<<<<< HEAD
+    max-height: 320px;
+    
+=======
     height: 204.8px;
     width: 153.6px;
+>>>>>>> 93a1bfb536d3b42e09020253155cbbe8fae35c4c
 }
 
 .image_bibliotek{
