@@ -60,7 +60,6 @@ dl {
     max-height: 350px;
     padding-top: 60px;
     padding-bottom: 40px;
-
 }   
 
 .image_p35{                                                   /*Endrer størrelse på bildet, men sammtidig holder riktig sørrelsesforhold, gir også mellomrom på venstre side*/
@@ -78,7 +77,6 @@ dl {
     width: 400px;
     height: 400px;
     margin-left: 25px;
-    
 }
 
 .image_datatorget{
@@ -106,34 +104,21 @@ dl {
 }
 
 
-* {
-    box-sizing: border-box;
-  }
+/*Tatt fra https://www.w3schools.com/howto/howto_css_two_columns.asp*/
+* { box-sizing: border-box; }
 
-/* Create two equal columns that floats next to each other */
-.column {
+.column {                       /*Lager to kolonner ved siden av hverandre der begge kolonner tar 50% av bredden*/
     float: left;
     width: 50%;
     padding: 5px;
     text-align: center;
-
   }
   
-  /* Clear floats after the columns */
-  .row:after {
+  .row:after {                      /*For å tilpasse høyde etter innhold*/
     content: "";
     display: table;
     clear: both;
   }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -149,7 +134,7 @@ dl {
     }
 }
 .navbar_img_p35{ 
-    alt:"Foto: Arthur Thonrud Flotvik";              /*Definerer størrelse og skalering, sikrer også at bildet ikke repeterer seg, eller ikke fyller ut den tildelte plassen */
+    alt:"Foto: Arthur Thonrud Flotvik";                             /*Definerer størrelse og skalering, sikrer også at bildet ikke repeterer seg, eller ikke fyller ut den tildelte plassen */
     background-image: url("../Images/p35_top.webp");
     min-height: 403.2px;
     background-position: center;
@@ -158,7 +143,7 @@ dl {
     position: relative;
     overflow: hidden;
 }
-.container_navbar_p35{                                                         /*Bestemmer posisjon på navbaren, og størrelse på skriften i den*/
+.container_navbar_p35{                                                   /*Bestemmer posisjon på navbaren, og størrelse på skriften i den*/
     position: absolute;
     margin: 20px;
     width: auto;
@@ -194,9 +179,9 @@ dl {
 
 
 /*Hamburer meny*/ 
-/* Kilde for oppsett av denne: https://oslomet.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e07c0035-72e8-41fd-a7de-b09800a14526(Canvas > DATA1200 > Lecture notes > CompletePage_02_Simple-Burger-menu*/
+/* Kilde for oppsett av denne: https://oslomet.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=e07c0035-72e8-41fd-a7de-b09800a14526(Canvas eller > DATA1200 > Lecture notes > CompletePage_02_Simple-Burger-menu*/
 
-#burger-toggle{
+#burger-toggle{                                          /*Skjuler alle elementer med id:burger-toggle*/
     display: none;
 }
 
